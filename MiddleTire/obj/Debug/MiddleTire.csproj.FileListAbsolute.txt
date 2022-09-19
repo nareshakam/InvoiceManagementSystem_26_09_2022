@@ -1,0 +1,9 @@
+D:\INvoiceManagementSystem\MiddleTire\bin\Debug\MiddleTire.dll
+D:\INvoiceManagementSystem\MiddleTire\bin\Debug\MiddleTire.pdb
+D:\INvoiceManagementSystem\MiddleTire\bin\Debug\DataConnect.dll
+D:\INvoiceManagementSystem\MiddleTire\bin\Debug\DataConnect.pdb
+D:\INvoiceManagementSystem\MiddleTire\obj\Debug\MiddleTire.csproj.AssemblyReference.cache
+D:\INvoiceManagementSystem\MiddleTire\obj\Debug\MiddleTire.csproj.CoreCompileInputs.cache
+D:\INvoiceManagementSystem\MiddleTire\obj\Debug\MiddleTire.csproj.CopyComplete
+D:\INvoiceManagementSystem\MiddleTire\obj\Debug\MiddleTire.dll
+D:\INvoiceManagementSystem\MiddleTire\obj\Debug\MiddleTire.pdb
