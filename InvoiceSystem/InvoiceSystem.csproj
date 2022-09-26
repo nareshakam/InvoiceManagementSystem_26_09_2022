@@ -64,11 +64,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomePageForm.cs">
+    <Compile Include="ScearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePageForm.Designer.cs">
-      <DependentUpon>HomePageForm.cs</DependentUpon>
+    <Compile Include="ScearchForm.Designer.cs">
+      <DependentUpon>ScearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InvoiceForm.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePageForm.resx">
-      <DependentUpon>HomePageForm.cs</DependentUpon>
+    <EmbeddedResource Include="ScearchForm.resx">
+      <DependentUpon>ScearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>

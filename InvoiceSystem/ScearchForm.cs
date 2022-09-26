@@ -12,9 +12,9 @@ using System.Text.RegularExpressions;
 
 namespace InvoiceSystem
 {
-    public partial class HomePageForm : Form
+    public partial class ScearchForm : Form
     {
-        public HomePageForm()
+        public ScearchForm()
         {
             InitializeComponent();
         }
@@ -43,6 +43,11 @@ namespace InvoiceSystem
             scearch(InvoiceNumber);
             txtInvoiceNumberData.Text = "";
             txtNamedata.Text = "";
+        }
+
+        private void txtInvoiceNumberData_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

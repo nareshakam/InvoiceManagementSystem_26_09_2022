@@ -8,7 +8,6 @@ D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.csproj.Generate
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.csproj.CoreCompileInputs.cache
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.exe
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.pdb
-D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.HomePageForm.resources
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.InvoiceForm.resources
 D:\INvoiceManagementSystem\InvoiceSystem\bin\Debug\MiddleTire.dll
 D:\INvoiceManagementSystem\InvoiceSystem\bin\Debug\DataConnect.dll
@@ -21,3 +20,4 @@ D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.DeleteCart.reso
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.EditCart.resources
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.UpDateCustmerDetails.resources
 D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.LoginPage.resources
+D:\INvoiceManagementSystem\InvoiceSystem\obj\Debug\InvoiceSystem.ScearchForm.resources

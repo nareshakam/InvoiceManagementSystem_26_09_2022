@@ -13,7 +13,7 @@ namespace DataConnect
             string numbers = "1234567890";
 
             string characters = numbers;
-            int length = 4;
+            int length = 6;
             string id = string.Empty;
             for (int i = 0; i < length; i++)
             {
@@ -28,6 +28,22 @@ namespace DataConnect
             }
             string InvoiceNumber = "INV" + id;
             return InvoiceNumber;
+        }
+        public string Invoicenumber()
+        {
+            ExitLable:
+            string invoicenumber = GenerateID();
+            clSqlConnection css = new clSqlConnection();
+
+            if (css.isInvthere(invoicenumber))
+            {
+                goto ExitLable;
+            }
+            else
+            {
+                return invoicenumber;
+            }
+
         }
     }
 }

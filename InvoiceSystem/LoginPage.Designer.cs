@@ -35,6 +35,10 @@ namespace InvoiceSystem
             this.BtnLogin = new System.Windows.Forms.Button();
             this.txtPasswordData = new System.Windows.Forms.TextBox();
             this.txtUserNameData = new System.Windows.Forms.TextBox();
+            this.lblErrorMessage = new System.Windows.Forms.Label();
+            this.lblUsernameerror = new System.Windows.Forms.Label();
+            this.lblpassworderror = new System.Windows.Forms.Label();
+            this.CheckPass = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,9 +71,9 @@ namespace InvoiceSystem
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(288, 346);
+            this.BtnLogin.Location = new System.Drawing.Point(261, 368);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(85, 38);
+            this.BtnLogin.Size = new System.Drawing.Size(112, 38);
             this.BtnLogin.TabIndex = 1;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -81,6 +85,7 @@ namespace InvoiceSystem
             this.txtPasswordData.Name = "txtPasswordData";
             this.txtPasswordData.Size = new System.Drawing.Size(163, 26);
             this.txtPasswordData.TabIndex = 2;
+            this.txtPasswordData.TextChanged += new System.EventHandler(this.txtPasswordData_TextChanged);
             // 
             // txtUserNameData
             // 
@@ -88,12 +93,57 @@ namespace InvoiceSystem
             this.txtUserNameData.Name = "txtUserNameData";
             this.txtUserNameData.Size = new System.Drawing.Size(163, 26);
             this.txtUserNameData.TabIndex = 2;
+            this.txtUserNameData.TextChanged += new System.EventHandler(this.txtUserNameData_TextChanged);
+            // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMessage.Location = new System.Drawing.Point(206, 328);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(0, 20);
+            this.lblErrorMessage.TabIndex = 3;
+            this.lblErrorMessage.Visible = false;
+            // 
+            // lblUsernameerror
+            // 
+            this.lblUsernameerror.AutoSize = true;
+            this.lblUsernameerror.ForeColor = System.Drawing.Color.Red;
+            this.lblUsernameerror.Location = new System.Drawing.Point(206, 248);
+            this.lblUsernameerror.Name = "lblUsernameerror";
+            this.lblUsernameerror.Size = new System.Drawing.Size(0, 20);
+            this.lblUsernameerror.TabIndex = 4;
+            this.lblUsernameerror.Visible = false;
+            // 
+            // lblpassworderror
+            // 
+            this.lblpassworderror.AutoSize = true;
+            this.lblpassworderror.ForeColor = System.Drawing.Color.Red;
+            this.lblpassworderror.Location = new System.Drawing.Point(212, 312);
+            this.lblpassworderror.Name = "lblpassworderror";
+            this.lblpassworderror.Size = new System.Drawing.Size(0, 20);
+            this.lblpassworderror.TabIndex = 5;
+            // 
+            // CheckPass
+            // 
+            this.CheckPass.AutoSize = true;
+            this.CheckPass.Location = new System.Drawing.Point(379, 285);
+            this.CheckPass.Name = "CheckPass";
+            this.CheckPass.Size = new System.Drawing.Size(75, 24);
+            this.CheckPass.TabIndex = 6;
+            this.CheckPass.Text = "Show";
+            this.CheckPass.UseVisualStyleBackColor = true;
+            this.CheckPass.CheckedChanged += new System.EventHandler(this.CheckPass_CheckedChanged);
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 450);
+            this.Controls.Add(this.CheckPass);
+            this.Controls.Add(this.lblpassworderror);
+            this.Controls.Add(this.lblUsernameerror);
+            this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.txtUserNameData);
             this.Controls.Add(this.txtPasswordData);
             this.Controls.Add(this.BtnLogin);
@@ -117,5 +167,9 @@ namespace InvoiceSystem
         private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.TextBox txtPasswordData;
         private System.Windows.Forms.TextBox txtUserNameData;
+        private System.Windows.Forms.Label lblErrorMessage;
+        private System.Windows.Forms.Label lblUsernameerror;
+        private System.Windows.Forms.Label lblpassworderror;
+        private System.Windows.Forms.CheckBox CheckPass;
     }
 }

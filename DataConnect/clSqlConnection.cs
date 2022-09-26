@@ -116,13 +116,13 @@ namespace DataConnect
             //Close the connection
             conn.Close();
             string paid = ds.Tables[0].Rows[0][0].ToString();
-            if (paid == "Paid")
+            if (paid == "UnPaid")
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
         }
         public void InsertItems(string pname,int pquantity,double pprice,string InvoiceNumber)
@@ -218,7 +218,7 @@ namespace DataConnect
             conn.Close();
             return a;
         }
-        public DataSet getinvoiceNumber(string CustmerName,string date)
+        public DataSet getinvoiceNumber(string CustmerName)
         {
             //1.sql connection
             string ConnectionString = ConfigurationManager.ConnectionStrings["DbCon"].ToString();
@@ -227,7 +227,7 @@ namespace DataConnect
 
             //2.fire the Command object
             //Stroed Procedures
-            SqlCommand cmd = new SqlCommand("SELECT * FROM CustmerInformation WHERE Custmername LIKE '%"+CustmerName+"%' OR InvoiceDate = '"+date+"'", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM CustmerInformation WHERE Custmername LIKE '%"+CustmerName+"%'", conn);
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(ds);
@@ -246,6 +246,26 @@ namespace DataConnect
             int a = cmd.ExecuteNonQuery();
             conn.Close();
             return a;
+        }
+        public bool isInvthere(string invoiceNumber)
+        {
+            String ConnectionString = ConfigurationManager.ConnectionStrings["DbCon"].ToString();
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM CustmerInformation Where InvoiceNumber = '"+invoiceNumber+"'", conn);
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            conn.Close();
+            //string InvoiceNumber = ds.Tables[0].Rows[0][0].ToString();
+            if (ds.Tables[0].Rows.Count==0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

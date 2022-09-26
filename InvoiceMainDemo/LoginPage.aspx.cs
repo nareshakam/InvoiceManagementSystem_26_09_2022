@@ -27,18 +27,29 @@ namespace InvoiceMainDemo
             bool isadmin = mdc.IsAdmin(userName,Password);
             Invoice inv = new Invoice();
             inv.IsAdmin = isadmin;
-            if(mdc.valied(userName,Password)&&isadmin)
+            InvoceSearch invs = new InvoceSearch();
+            invs.IsAdmin = isadmin;
+            SelectItems si = new SelectItems();
+            si.IsAdmin = isadmin;
+            bool valied = mdc.valied(userName, Password);
+            if(valied&&isadmin)
             {
                 Response.Redirect("InvoiceHome.aspx");
             }
-            else if(mdc.valied(userName,Password))
+            else if(valied&&!isadmin)
             {
 
                 Response.Redirect("SelectItems.aspx"); ;
             }
+            else if(txtUserName.Text.Length==0||txtPassword.Text.Length==0)
+            {
+                lblerrormessage.Visible = true;
+                lblerrormessage.Text = "*please Enter user name/password...!";
+            }
             else
             {
-                Response.Write("Invalied UserName And Password....!");
+                lblerrormessage.Visible = true;
+                lblerrormessage.Text = "*Invalied UserName/Password...!";
             }
         }
     }

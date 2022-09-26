@@ -1,7 +1,7 @@
 ﻿
 namespace InvoiceSystem
 {
-    partial class HomePageForm
+    partial class ScearchForm
     {
         /// <summary>
         /// Required designer variable.
@@ -81,10 +81,11 @@ namespace InvoiceSystem
             // txtInvoiceNumberData
             // 
             this.txtInvoiceNumberData.Location = new System.Drawing.Point(262, 61);
-            this.txtInvoiceNumberData.MaxLength = 7;
+            this.txtInvoiceNumberData.MaxLength = 9;
             this.txtInvoiceNumberData.Name = "txtInvoiceNumberData";
             this.txtInvoiceNumberData.Size = new System.Drawing.Size(175, 26);
             this.txtInvoiceNumberData.TabIndex = 4;
+            this.txtInvoiceNumberData.TextChanged += new System.EventHandler(this.txtInvoiceNumberData_TextChanged);
             // 
             // txtNamedata
             // 
@@ -93,7 +94,7 @@ namespace InvoiceSystem
             this.txtNamedata.Size = new System.Drawing.Size(175, 26);
             this.txtNamedata.TabIndex = 5;
             // 
-            // HomePageForm
+            // ScearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,8 +105,8 @@ namespace InvoiceSystem
             this.Controls.Add(this.BtnScearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "HomePageForm";
-            this.Text = "HomePageForm";
+            this.Name = "ScearchForm";
+            this.Text = "ScearchForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewscarch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

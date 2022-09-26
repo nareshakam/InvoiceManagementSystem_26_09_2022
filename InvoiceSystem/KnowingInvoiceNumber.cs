@@ -14,6 +14,9 @@ namespace InvoiceSystem
 {
     public partial class KnowingInvoiceNumber : Form
     {
+        private static string byway = "name";
+        public static string Byway { get => byway; set => byway = value; }
+
         public KnowingInvoiceNumber()
         {
             InitializeComponent();
@@ -22,32 +25,45 @@ namespace InvoiceSystem
         private void BtnScearch_Click(object sender, EventArgs e)
         {
             string CustmerName = txtNameData.Text;
-            string date = txtdatedata.Text;
-            string exp = "^[a-zA-Z]{1-20}$";
+            string exp = "^[a-zA-Z0-9]{1-20}$";
             Regex rx = new Regex(exp);
+            lblnameerror.Visible = false;
             string name = txtNameData.Text;
-            if (rx.IsMatch(name))
+            if (txtNameData.Text.Length==0&&byway.Equals("name"))
             {
-                MessageBox.Show("Invalied Name give a proper Name...!");
-                return;
+                lblnameerror.Visible = true;
+                lblnameerror.Text="*please give a proper Name...!";
             }
             else
             {
-                fetch(CustmerName, date);
+                fetch(CustmerName);
             }
             
             
         }
-        private void fetch(string CustmerName,string date)
+        private void fetch(string CustmerName)
         {
             MidleTireConnection mdc = new MidleTireConnection();
-            DataSet ds = mdc.getinvoiceNumber(CustmerName, date);
+            DataSet ds = mdc.getinvoiceNumber(CustmerName);
             dataGridViewInvoicecearch.DataSource = ds.Tables[0];
         }
 
         private void txtNameData_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void KnowingInvoiceNumber_Load(object sender, EventArgs e)
+        {
+            if (byway != "name")
+            {
+                txtNameData.Visible = false;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

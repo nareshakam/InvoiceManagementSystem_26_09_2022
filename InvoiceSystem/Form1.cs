@@ -170,7 +170,7 @@ namespace InvoiceSystem
         public void insertItems()
         {
             MidleTireConnection mdc = new MidleTireConnection();
-            InvoiceNumber = GenerateID();
+            InvoiceNumber = mdc.GenerateId();
             if (true)
             {
                 string pname = LBread.Text;
@@ -232,6 +232,7 @@ namespace InvoiceSystem
             InvoiceForm inf = new InvoiceForm();
             inf.InvoiceNumber = InvoiceNumber;
             inf.ShowDialog();
+            this.Close();
         }
     }
 }

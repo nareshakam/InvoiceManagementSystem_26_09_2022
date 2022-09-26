@@ -15,7 +15,7 @@ namespace InvoiceSystem
     {
         private int childFormNumber = 0;
 
-        private bool isAdmin = false;
+        private static bool isAdmin = false;
 
         public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
@@ -38,7 +38,7 @@ namespace InvoiceSystem
 
         private void OpenFile(object sender, EventArgs e)
         {
-            HomePageForm hpm = new HomePageForm();
+            ScearchForm hpm = new ScearchForm();
             hpm.MdiParent = this;
             hpm.Show();
 
@@ -117,16 +117,30 @@ namespace InvoiceSystem
 
         private void knowInvoiceNumberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            KnowingInvoiceNumber kni = new KnowingInvoiceNumber();
-            kni.Show();
-            kni.MdiParent = this;
+            if (isAdmin)
+            {
+                KnowingInvoiceNumber kni = new KnowingInvoiceNumber();
+                kni.Show();
+                kni.MdiParent = this;
+            }
+            else
+            {
+                MessageBox.Show("UnauthorizedAccess...! your not an Admin");
+            }
         }
 
         private void deleteCartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DeleteCart dc = new DeleteCart();
-            dc.Show();
-            dc.MdiParent = this;
+            if (isAdmin)
+            {
+                DeleteCart dc = new DeleteCart();
+                dc.Show();
+                dc.MdiParent = this;
+            }
+            else
+            {
+                MessageBox.Show("UnauthorizedAccess...! your not an Admin");
+            }
         }
 
         private void editMenu_Click(object sender, EventArgs e)
@@ -157,12 +171,33 @@ namespace InvoiceSystem
 
         private void MDIInvoice_Load(object sender, EventArgs e)
         {
-
+            LoginPage lp = new LoginPage();
+            lp.Hide();
         }
 
         private void helpToolStripButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LoginPage lp = new LoginPage();
+            lp.Singout = 1;
+            this.Close();
+        }
+
+        private void byNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void byDateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KnowingInvoiceNumber kni = new KnowingInvoiceNumber();
+            KnowingInvoiceNumber.Byway = "date";
+            kni.Show();
+            kni.MdiParent = this;
         }
     }
 }

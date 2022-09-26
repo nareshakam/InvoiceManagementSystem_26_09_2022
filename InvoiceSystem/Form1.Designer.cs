@@ -119,15 +119,15 @@ namespace InvoiceSystem
             this.panel3.Controls.Add(this.lbBeans);
             this.panel3.Controls.Add(this.lbRice);
             this.panel3.Controls.Add(this.LBread);
-            this.panel3.Location = new System.Drawing.Point(94, 149);
+            this.panel3.Location = new System.Drawing.Point(13, 127);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1014, 640);
+            this.panel3.Size = new System.Drawing.Size(1014, 547);
             this.panel3.TabIndex = 0;
             // 
             // itemslbl
             // 
             this.itemslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemslbl.Location = new System.Drawing.Point(46, 5);
+            this.itemslbl.Location = new System.Drawing.Point(-2, 5);
             this.itemslbl.Name = "itemslbl";
             this.itemslbl.Size = new System.Drawing.Size(165, 48);
             this.itemslbl.TabIndex = 6;
@@ -136,7 +136,7 @@ namespace InvoiceSystem
             // noofitemslbl
             // 
             this.noofitemslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noofitemslbl.Location = new System.Drawing.Point(344, 5);
+            this.noofitemslbl.Location = new System.Drawing.Point(296, 5);
             this.noofitemslbl.Name = "noofitemslbl";
             this.noofitemslbl.Size = new System.Drawing.Size(227, 48);
             this.noofitemslbl.TabIndex = 5;
@@ -145,7 +145,7 @@ namespace InvoiceSystem
             // costofitemlbl
             // 
             this.costofitemlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.costofitemlbl.Location = new System.Drawing.Point(657, 5);
+            this.costofitemlbl.Location = new System.Drawing.Point(609, 5);
             this.costofitemlbl.Name = "costofitemlbl";
             this.costofitemlbl.Size = new System.Drawing.Size(328, 48);
             this.costofitemlbl.TabIndex = 4;
@@ -156,7 +156,7 @@ namespace InvoiceSystem
             this.lblTotalQuantity.BackColor = System.Drawing.Color.White;
             this.lblTotalQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTotalQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalQuantity.Location = new System.Drawing.Point(337, 476);
+            this.lblTotalQuantity.Location = new System.Drawing.Point(289, 476);
             this.lblTotalQuantity.Name = "lblTotalQuantity";
             this.lblTotalQuantity.Size = new System.Drawing.Size(220, 46);
             this.lblTotalQuantity.TabIndex = 3;
@@ -166,7 +166,7 @@ namespace InvoiceSystem
             // NumSuger
             // 
             this.NumSuger.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumSuger.Location = new System.Drawing.Point(337, 321);
+            this.NumSuger.Location = new System.Drawing.Point(289, 321);
             this.NumSuger.Name = "NumSuger";
             this.NumSuger.Size = new System.Drawing.Size(220, 35);
             this.NumSuger.TabIndex = 2;
@@ -176,7 +176,7 @@ namespace InvoiceSystem
             // NumMilk
             // 
             this.NumMilk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumMilk.Location = new System.Drawing.Point(337, 402);
+            this.NumMilk.Location = new System.Drawing.Point(289, 402);
             this.NumMilk.Name = "NumMilk";
             this.NumMilk.Size = new System.Drawing.Size(220, 35);
             this.NumMilk.TabIndex = 2;
@@ -186,7 +186,7 @@ namespace InvoiceSystem
             // NumBeans
             // 
             this.NumBeans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumBeans.Location = new System.Drawing.Point(337, 238);
+            this.NumBeans.Location = new System.Drawing.Point(289, 238);
             this.NumBeans.Name = "NumBeans";
             this.NumBeans.Size = new System.Drawing.Size(220, 35);
             this.NumBeans.TabIndex = 2;
@@ -196,7 +196,7 @@ namespace InvoiceSystem
             // NumRice
             // 
             this.NumRice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumRice.Location = new System.Drawing.Point(337, 156);
+            this.NumRice.Location = new System.Drawing.Point(289, 156);
             this.NumRice.Name = "NumRice";
             this.NumRice.Size = new System.Drawing.Size(220, 35);
             this.NumRice.TabIndex = 2;
@@ -208,7 +208,7 @@ namespace InvoiceSystem
             this.lblTotalAmount.BackColor = System.Drawing.Color.White;
             this.lblTotalAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAmount.Location = new System.Drawing.Point(693, 472);
+            this.lblTotalAmount.Location = new System.Drawing.Point(645, 472);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.Size = new System.Drawing.Size(168, 46);
             this.lblTotalAmount.TabIndex = 1;
@@ -220,7 +220,7 @@ namespace InvoiceSystem
             this.lblSugerAmount.BackColor = System.Drawing.Color.White;
             this.lblSugerAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSugerAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSugerAmount.Location = new System.Drawing.Point(693, 310);
+            this.lblSugerAmount.Location = new System.Drawing.Point(645, 310);
             this.lblSugerAmount.Name = "lblSugerAmount";
             this.lblSugerAmount.Size = new System.Drawing.Size(168, 46);
             this.lblSugerAmount.TabIndex = 1;
@@ -230,7 +230,7 @@ namespace InvoiceSystem
             // NumBread
             // 
             this.NumBread.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumBread.Location = new System.Drawing.Point(337, 73);
+            this.NumBread.Location = new System.Drawing.Point(289, 73);
             this.NumBread.Name = "NumBread";
             this.NumBread.Size = new System.Drawing.Size(220, 35);
             this.NumBread.TabIndex = 2;
@@ -242,7 +242,7 @@ namespace InvoiceSystem
             this.lblMilkAmount.BackColor = System.Drawing.Color.White;
             this.lblMilkAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMilkAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMilkAmount.Location = new System.Drawing.Point(693, 389);
+            this.lblMilkAmount.Location = new System.Drawing.Point(645, 389);
             this.lblMilkAmount.Name = "lblMilkAmount";
             this.lblMilkAmount.Size = new System.Drawing.Size(168, 46);
             this.lblMilkAmount.TabIndex = 1;
@@ -254,7 +254,7 @@ namespace InvoiceSystem
             this.lblBeansAmount.BackColor = System.Drawing.Color.White;
             this.lblBeansAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBeansAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeansAmount.Location = new System.Drawing.Point(693, 227);
+            this.lblBeansAmount.Location = new System.Drawing.Point(645, 227);
             this.lblBeansAmount.Name = "lblBeansAmount";
             this.lblBeansAmount.Size = new System.Drawing.Size(168, 46);
             this.lblBeansAmount.TabIndex = 1;
@@ -266,7 +266,7 @@ namespace InvoiceSystem
             this.lblRiceAmount.BackColor = System.Drawing.Color.White;
             this.lblRiceAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblRiceAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiceAmount.Location = new System.Drawing.Point(693, 145);
+            this.lblRiceAmount.Location = new System.Drawing.Point(645, 145);
             this.lblRiceAmount.Name = "lblRiceAmount";
             this.lblRiceAmount.Size = new System.Drawing.Size(168, 46);
             this.lblRiceAmount.TabIndex = 1;
@@ -276,7 +276,7 @@ namespace InvoiceSystem
             // lbTotal
             // 
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(62, 485);
+            this.lbTotal.Location = new System.Drawing.Point(14, 485);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(165, 48);
             this.lbTotal.TabIndex = 0;
@@ -285,7 +285,7 @@ namespace InvoiceSystem
             // lbSuger
             // 
             this.lbSuger.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSuger.Location = new System.Drawing.Point(62, 323);
+            this.lbSuger.Location = new System.Drawing.Point(14, 323);
             this.lbSuger.Name = "lbSuger";
             this.lbSuger.Size = new System.Drawing.Size(165, 48);
             this.lbSuger.TabIndex = 0;
@@ -294,7 +294,7 @@ namespace InvoiceSystem
             // lbMilk
             // 
             this.lbMilk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMilk.Location = new System.Drawing.Point(62, 402);
+            this.lbMilk.Location = new System.Drawing.Point(14, 402);
             this.lbMilk.Name = "lbMilk";
             this.lbMilk.Size = new System.Drawing.Size(165, 48);
             this.lbMilk.TabIndex = 0;
@@ -305,7 +305,7 @@ namespace InvoiceSystem
             this.lblBreadAmmount.BackColor = System.Drawing.Color.White;
             this.lblBreadAmmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBreadAmmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBreadAmmount.Location = new System.Drawing.Point(693, 62);
+            this.lblBreadAmmount.Location = new System.Drawing.Point(645, 62);
             this.lblBreadAmmount.Name = "lblBreadAmmount";
             this.lblBreadAmmount.Size = new System.Drawing.Size(168, 46);
             this.lblBreadAmmount.TabIndex = 1;
@@ -315,7 +315,7 @@ namespace InvoiceSystem
             // lbBeans
             // 
             this.lbBeans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBeans.Location = new System.Drawing.Point(62, 240);
+            this.lbBeans.Location = new System.Drawing.Point(14, 240);
             this.lbBeans.Name = "lbBeans";
             this.lbBeans.Size = new System.Drawing.Size(165, 48);
             this.lbBeans.TabIndex = 0;
@@ -324,7 +324,7 @@ namespace InvoiceSystem
             // lbRice
             // 
             this.lbRice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRice.Location = new System.Drawing.Point(62, 158);
+            this.lbRice.Location = new System.Drawing.Point(14, 158);
             this.lbRice.Name = "lbRice";
             this.lbRice.Size = new System.Drawing.Size(165, 48);
             this.lbRice.TabIndex = 0;
@@ -333,7 +333,7 @@ namespace InvoiceSystem
             // LBread
             // 
             this.LBread.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBread.Location = new System.Drawing.Point(62, 75);
+            this.LBread.Location = new System.Drawing.Point(14, 75);
             this.LBread.Name = "LBread";
             this.LBread.Size = new System.Drawing.Size(165, 48);
             this.LBread.TabIndex = 0;
@@ -351,16 +351,16 @@ namespace InvoiceSystem
             this.panel4.Controls.Add(this.BtnRecipt);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.BtnTotal);
-            this.panel4.Location = new System.Drawing.Point(95, 823);
+            this.panel4.Location = new System.Drawing.Point(11, 690);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1697, 105);
+            this.panel4.Size = new System.Drawing.Size(1671, 83);
             this.panel4.TabIndex = 0;
             // 
             // BtnExit
             // 
             this.BtnExit.BackColor = System.Drawing.Color.Chocolate;
             this.BtnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExit.Location = new System.Drawing.Point(1478, 18);
+            this.BtnExit.Location = new System.Drawing.Point(1467, 5);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(197, 68);
             this.BtnExit.TabIndex = 6;
@@ -372,7 +372,7 @@ namespace InvoiceSystem
             // 
             this.BtnPrint.BackColor = System.Drawing.Color.Chocolate;
             this.BtnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrint.Location = new System.Drawing.Point(599, 20);
+            this.BtnPrint.Location = new System.Drawing.Point(588, 7);
             this.BtnPrint.Name = "BtnPrint";
             this.BtnPrint.Size = new System.Drawing.Size(282, 68);
             this.BtnPrint.TabIndex = 3;
@@ -384,7 +384,7 @@ namespace InvoiceSystem
             // 
             this.BtnPayment.BackColor = System.Drawing.Color.Chocolate;
             this.BtnPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPayment.Location = new System.Drawing.Point(1181, 18);
+            this.BtnPayment.Location = new System.Drawing.Point(1170, 5);
             this.BtnPayment.Name = "BtnPayment";
             this.BtnPayment.Size = new System.Drawing.Size(282, 68);
             this.BtnPayment.TabIndex = 5;
@@ -396,7 +396,7 @@ namespace InvoiceSystem
             // 
             this.BtnReset.BackColor = System.Drawing.Color.Chocolate;
             this.BtnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnReset.Location = new System.Drawing.Point(891, 18);
+            this.BtnReset.Location = new System.Drawing.Point(880, 5);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(282, 68);
             this.BtnReset.TabIndex = 4;
@@ -408,7 +408,7 @@ namespace InvoiceSystem
             // 
             this.button2.BackColor = System.Drawing.Color.Chocolate;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(306, 18);
+            this.button2.Location = new System.Drawing.Point(295, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(282, 68);
             this.button2.TabIndex = 1;
@@ -420,7 +420,7 @@ namespace InvoiceSystem
             // 
             this.BtnRecipt.BackColor = System.Drawing.Color.Chocolate;
             this.BtnRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRecipt.Location = new System.Drawing.Point(351, 18);
+            this.BtnRecipt.Location = new System.Drawing.Point(340, 5);
             this.BtnRecipt.Name = "BtnRecipt";
             this.BtnRecipt.Size = new System.Drawing.Size(237, 68);
             this.BtnRecipt.TabIndex = 1;
@@ -432,7 +432,7 @@ namespace InvoiceSystem
             // 
             this.button1.BackColor = System.Drawing.Color.Chocolate;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 20);
+            this.button1.Location = new System.Drawing.Point(5, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(282, 68);
             this.button1.TabIndex = 0;
@@ -444,7 +444,7 @@ namespace InvoiceSystem
             // 
             this.BtnTotal.BackColor = System.Drawing.Color.Chocolate;
             this.BtnTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTotal.Location = new System.Drawing.Point(42, 20);
+            this.BtnTotal.Location = new System.Drawing.Point(31, 7);
             this.BtnTotal.Name = "BtnTotal";
             this.BtnTotal.Size = new System.Drawing.Size(256, 68);
             this.BtnTotal.TabIndex = 0;
@@ -458,16 +458,16 @@ namespace InvoiceSystem
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.rtReceipt);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(1140, 149);
+            this.panel5.Location = new System.Drawing.Point(1041, 125);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(652, 640);
+            this.panel5.Size = new System.Drawing.Size(641, 549);
             this.panel5.TabIndex = 0;
             // 
             // rtReceipt
             // 
             this.rtReceipt.Location = new System.Drawing.Point(42, 62);
             this.rtReceipt.Name = "rtReceipt";
-            this.rtReceipt.Size = new System.Drawing.Size(573, 539);
+            this.rtReceipt.Size = new System.Drawing.Size(562, 462);
             this.rtReceipt.TabIndex = 0;
             this.rtReceipt.Text = "";
             this.rtReceipt.TextChanged += new System.EventHandler(this.rtReceipt_TextChanged);
@@ -486,20 +486,20 @@ namespace InvoiceSystem
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(95, 29);
+            this.panel2.Location = new System.Drawing.Point(24, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1697, 100);
+            this.panel2.Size = new System.Drawing.Size(1658, 79);
             this.panel2.TabIndex = 0;
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Chocolate;
-            this.label14.Location = new System.Drawing.Point(432, 15);
+            this.label14.Location = new System.Drawing.Point(547, 15);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(1171, 64);
+            this.label14.Size = new System.Drawing.Size(546, 64);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Naresh Bakery InvoiceManagement System";
+            this.label14.Text = "InvoiceManagement System";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // printDocument1
@@ -521,7 +521,7 @@ namespace InvoiceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1885, 1011);
+            this.ClientSize = new System.Drawing.Size(1727, 816);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

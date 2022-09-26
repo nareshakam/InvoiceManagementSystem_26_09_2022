@@ -13,16 +13,28 @@ namespace InvoiceMainDemo
 {
     public partial class SelectItems : System.Web.UI.Page
     {
+        private static bool isAdmin = false;
+
         double Bread = 10.20;
         double rice = 18.50;
-        double suger = 10.20;
-        double beans = 10.20;
-        double milk = 10.20;
+        double suger = 15.50;
+        double beans = 25.60;
+        double milk = 69.75;
         double[] q = new double[7];
         double[] items = new double[7];
+
+        public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(isAdmin)
+            {
+                BtmHome.Visible = true;
+            }
+            else
+            {
+                BtmHome.Visible = false;
+            }
         }
 
         protected void ddlBread_SelectedIndexChanged(object sender, EventArgs e)
@@ -175,6 +187,16 @@ namespace InvoiceMainDemo
         protected void BtnPayLater_Click(object sender, EventArgs e)
         {
             Response.Redirect("InvoceSearch.aspx");
+        }
+
+        protected void Btnlogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginPage.aspx");
+        }
+
+        protected void BtmHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InvoiceHome.aspx");
         }
     }
 }

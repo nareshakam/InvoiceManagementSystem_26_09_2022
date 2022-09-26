@@ -87,6 +87,15 @@ namespace InvoiceMainDemo
         protected global::System.Web.UI.WebControls.TextBox txtnamedata;
 
         /// <summary>
+        /// lblnameerror control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblnameerror;
+
+        /// <summary>
         /// Label4 control.
         /// </summary>
         /// <remarks>
@@ -123,6 +132,33 @@ namespace InvoiceMainDemo
         protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
 
         /// <summary>
+        /// lblTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotal;
+
+        /// <summary>
+        /// lbTotalResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbTotalResult;
+
+        /// <summary>
+        /// lblmessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmessage;
+
+        /// <summary>
         /// BtnBuy control.
         /// </summary>
         /// <remarks>
@@ -141,6 +177,15 @@ namespace InvoiceMainDemo
         protected global::System.Web.UI.WebControls.Button BtnScearch;
 
         /// <summary>
+        /// BtnScearchInvoiceNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnScearchInvoiceNumber;
+
+        /// <summary>
         /// BtnDelete control.
         /// </summary>
         /// <remarks>
@@ -157,5 +202,23 @@ namespace InvoiceMainDemo
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUpdate;
+
+        /// <summary>
+        /// Btnlogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btnlogout;
+
+        /// <summary>
+        /// GridViewScearchInvoiceNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewScearchInvoiceNumber;
     }
 }

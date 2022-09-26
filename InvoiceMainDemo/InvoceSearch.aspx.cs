@@ -13,11 +13,15 @@ namespace InvoiceMainDemo
 {
     public partial class InvoceSearch : System.Web.UI.Page
     {
+        private static bool isAdmin = false;
+        
         double Bread = 10.20;
         double rice = 18.50;
-        double suger = 10.20;
-        double beans = 10.20;
-        double milk = 10.20;
+        double suger = 15.50;
+        double beans = 25.60;
+        double milk = 69.75;
+
+        public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -44,7 +48,9 @@ namespace InvoiceMainDemo
         {
             if (status())
             {
-                Response.Write("Alredy Paid...!");
+                lbltotalAmount.Visible = true;
+                lbltotalAmount.Text = System.Drawing.Color.Green.ToString();
+                lbltotalAmount.Text="Alredy Paid...!";
             }
             else
             {
@@ -107,6 +113,7 @@ namespace InvoiceMainDemo
                 double price = Convert.ToDouble(lblPriceData.Text);
                 string InvoiceNumber = txtInvoiceNumberData.Text;
                 UpDateItems(pname, pquantity, price, InvoiceNumber);
+                LoadItemsScarch();
                 lblNameData.Text = "";
                 ddlpquantity.SelectedIndex = 0;
                 lblPriceData.Text = "";
@@ -148,6 +155,18 @@ namespace InvoiceMainDemo
             {
                 //Close the connection
                 conn.Close();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if(isAdmin)
+            {
+                Response.Redirect("InvoiceHome.aspx");
+            }
+            else
+            {
+                Response.Redirect("SelectItems.aspx");
             }
         }
     }

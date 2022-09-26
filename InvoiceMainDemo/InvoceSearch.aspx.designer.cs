@@ -60,6 +60,24 @@ namespace InvoiceMainDemo
         protected global::System.Web.UI.WebControls.GridView GridViewcardDetails;
 
         /// <summary>
+        /// lbltotalAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbltotalAmount;
+
+        /// <summary>
+        /// lblinvoiceresult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblinvoiceresult;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -121,5 +139,14 @@ namespace InvoiceMainDemo
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUpdate;
+
+        /// <summary>
+        /// BtnHome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnHome;
     }
 }

@@ -71,7 +71,11 @@
     <Content Include="InvoceSearch.aspx" />
     <Content Include="Invoice.aspx" />
     <Content Include="InvoiceHome.aspx" />
+    <Content Include="LoginForm.aspx" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="backimg.jpg" />
+    <Content Include="loginimg.jpg" />
+    <Content Include="PrintView.html" />
     <Content Include="SelectItems.aspx" />
     <Content Include="upiPaymentVerification.aspx" />
     <Content Include="Web.config" />
@@ -104,6 +108,13 @@
     </Compile>
     <Compile Include="InvoiceHome.aspx.designer.cs">
       <DependentUpon>InvoiceHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>

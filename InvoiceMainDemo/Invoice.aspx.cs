@@ -8,12 +8,14 @@ using System.Data;
 using System.Data.SqlClient;
 using DataConnect;
 using MiddleTire;
+using System.IO;
+using System.Web.UI.HtmlControls;
 
 namespace InvoiceMainDemo
 {
     public partial class Invoice : System.Web.UI.Page
     {
-        private bool isAdmin = false;
+        private static bool isAdmin = false;
         public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
         private static string _InvoiceStatus = "";
@@ -28,6 +30,7 @@ namespace InvoiceMainDemo
             ddlPaidStatus.SelectedValue = _InvoiceStatus;
             lblInvoiceAmountResult.Text = GetTotalInvoice().ToString();
             LoadCustmer();
+            
         }
         
         public int InsertCustmerDetails()
@@ -46,7 +49,9 @@ namespace InvoiceMainDemo
             }
             catch(Exception ex)
             {
-                Response.Write(ex.Message);
+                lblmessage.Visible = true;
+                lblmessage.ForeColor = System.Drawing.Color.Yellow;
+                lblmessage.Text = ex.Message;
                 return a;
             }
         }
@@ -56,7 +61,8 @@ namespace InvoiceMainDemo
             int a =InsertCustmerDetails();
             if (a > 0)
             {
-                Response.Write("Invoice Save SucessFully...!");
+                lblmessage.Visible = true;
+                lblmessage.Text = "Invoice Save SucessFully...!";
             }
         }
         public int gettingMaxId()
@@ -95,12 +101,60 @@ namespace InvoiceMainDemo
 
         protected void TxtDateData_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void ddlPaidStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void Btnprint_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    public class PrintHelper
+    {
+        public PrintHelper()
+        {
+        }
+
+        public static void PrintWebControl(Control ctrl)
+        {
+            PrintWebControl(ctrl, string.Empty);
+        }
+
+        public static void PrintWebControl(Control ctrl, string Script)
+        {
+            StringWriter stringWrite = new StringWriter();
+            System.Web.UI.HtmlTextWriter htmlWrite = new System.Web.UI.HtmlTextWriter(stringWrite);
+            if (ctrl is WebControl)
+            {
+                Unit w = new Unit(100, UnitType.Percentage); ((WebControl)ctrl).Width = w;
+            }
+            Page pg = new Page();
+            pg.EnableEventValidation = false;
+            if (Script != string.Empty)
+            {
+                pg.ClientScript.RegisterStartupScript(pg.GetType(), "PrintJavaScript", Script);
+            }
+            HtmlForm frm = new HtmlForm();
+            pg.Controls.Add(frm);
+            frm.Attributes.Add("runat", "server");
+            frm.Controls.Add(ctrl);
+            pg.DesignerInitialize();
+            pg.RenderControl(htmlWrite);
+            string strHTML = stringWrite.ToString();
+            HttpContext.Current.Response.Clear();
+            HttpContext.Current.Response.Write(strHTML);
+            HttpContext.Current.Response.Write("<script>window.print();</script>");
+            HttpContext.Current.Response.End();
         }
     }
 }

@@ -80,7 +80,7 @@ namespace MiddleTire
         public string GenerateId()
         {
             InvoiceNumber inv = new InvoiceNumber();
-            return inv.GenerateID();
+            return inv.Invoicenumber();
         }
         public bool valied(string UserName,string Password)
         {
@@ -108,10 +108,10 @@ namespace MiddleTire
             }
             return isadmin;
         }
-        public DataSet getinvoiceNumber(string CustmerName,string date)
+        public DataSet getinvoiceNumber(string CustmerName)
         {
             clSqlConnection css = new clSqlConnection();
-            DataSet ds = css.getinvoiceNumber(CustmerName, date);
+            DataSet ds = css.getinvoiceNumber(CustmerName);
             return ds;
         }
         public int UpdateItems(string name, int pq, double price, string inb)
