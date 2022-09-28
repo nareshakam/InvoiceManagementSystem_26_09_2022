@@ -18,28 +18,28 @@
         <asp:GridView ID="GridViewMainInvoice" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanged="GridViewMainInvoice_SelectedIndexChanged" BorderStyle="None">
         </asp:GridView>
         <br />
-        <asp:Label ID="Label1" runat="server" Text="InvoiceNumber :-"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="InvoiceNumber :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtInviceNumberData" runat="server" OnTextChanged="txtInviceNumberData_TextChanged"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label2" runat="server" Text="InvoiceDate :-"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="InvoiceDate :"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtDatedata" runat="server" TextMode="DateTime" OnTextChanged="txtDatedata_TextChanged"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label3" runat="server" Text="Custmer Name :-"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Custmer Name :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtnamedata" runat="server" OnTextChanged="txtnamedata_TextChanged"></asp:TextBox>
-        <asp:Label ID="lblnameerror" runat="server" Enabled="False" ForeColor="Yellow" Visible="False"></asp:Label>
+        <asp:Label ID="lblnameerror" runat="server" Enabled="False" ForeColor="Red" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Label ID="Label4" runat="server" Text="CustmerAdress :-"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="CustmerAdress :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
         <asp:TextBox ID="txtAdressData" runat="server" OnTextChanged="txtAdressData_TextChanged"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label5" runat="server" Text="InvoiceStatus :-"></asp:Label>
+        <asp:Label ID="Label5" runat="server" Text="InvoiceStatus :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="ddlStatus" runat="server" OnSelectedIndexChanged="ddlStatus_SelectedIndexChanged">
             <asp:ListItem>--select--</asp:ListItem>
@@ -48,12 +48,12 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:Label ID="lblTotal" runat="server" Enabled="False" Text="Total amount :-"></asp:Label>
+        <asp:Label ID="lblTotal" runat="server" Enabled="False" Text="Total amount :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lbTotalResult" runat="server" Enabled="False"></asp:Label>
         <br />
         <br />
-        <asp:Label ID="lblmessage" runat="server" Enabled="False" ForeColor="Green" Visible="False"></asp:Label>
+        <asp:Label ID="lblmessage" runat="server" Enabled="False" ForeColor="Blue" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:Button ID="BtnBuy" runat="server" OnClick="BtnBuy_Click" Text="Select to Buy" Width="140px" />

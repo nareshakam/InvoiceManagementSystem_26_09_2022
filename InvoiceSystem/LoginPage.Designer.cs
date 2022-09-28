@@ -56,18 +56,18 @@ namespace InvoiceSystem
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(97, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 20);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "User Name :-";
+            this.label2.Text = "User Name :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(97, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
+            this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Password :-";
+            this.label4.Text = "Password :";
             // 
             // BtnLogin
             // 

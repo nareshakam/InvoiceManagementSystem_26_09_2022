@@ -17,8 +17,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblInvoiceNumber" runat="server" Text="Invoice Number :-"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblInvoiceNumber" runat="server" Text="Invoice Number :"></asp:Label>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtInvoiceNumberData" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,15 +27,15 @@
             <asp:GridView ID="GridViewcardDetails" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateSelectButton="True">
             </asp:GridView>
             <br />
-            <asp:Label ID="lbltotalAmount" runat="server" Text="Total Invoice Amount :-" Visible="False"></asp:Label>
+            <asp:Label ID="lbltotalAmount" runat="server" Text="Total Invoice Amount :" Visible="False"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblinvoiceresult" runat="server" Visible="False"></asp:Label>
             <br />
-            <asp:Label ID="Label1" runat="server" Text="ProductName :-"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="ProductName :  "></asp:Label>
 &nbsp;
             <asp:Label ID="lblNameData" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label3" runat="server" Text="Product Quantity :-"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Product Quantity :  "></asp:Label>
 &nbsp;
             <asp:DropDownList ID="ddlpquantity" runat="server" OnSelectedIndexChanged="ddlpquantity_SelectedIndexChanged">
                 <asp:ListItem>0</asp:ListItem>
@@ -46,7 +46,7 @@
                 <asp:ListItem>5</asp:ListItem>
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label2" runat="server" Text="Product Price :-"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Product Price :  "></asp:Label>
 &nbsp;&nbsp;
             <asp:Label ID="lblPriceData" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

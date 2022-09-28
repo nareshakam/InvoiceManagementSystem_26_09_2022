@@ -52,45 +52,45 @@ namespace InvoiceSystem
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(89, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 20);
+            this.label1.Size = new System.Drawing.Size(127, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Invoice Number :-";
+            this.label1.Text = "Invoice Number :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(89, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(106, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Invoice Date :-";
+            this.label2.Text = "Invoice Date :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(89, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Status :-";
+            this.label3.Text = "Status :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(493, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 20);
+            this.label4.Size = new System.Drawing.Size(123, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Custmer Name :-";
+            this.label4.Text = "Custmer Name :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(493, 134);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 20);
+            this.label5.Size = new System.Drawing.Size(17, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Address :-";
+            this.label5.Text = "s";
             // 
             // txtAddressData
             // 
@@ -154,9 +154,9 @@ namespace InvoiceSystem
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(224, 573);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(251, 37);
+            this.label6.Size = new System.Drawing.Size(230, 37);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Total Invoice :- ";
+            this.label6.Text = "Total Invoice :";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblTotalAmount

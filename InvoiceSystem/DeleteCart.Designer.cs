@@ -44,24 +44,27 @@ namespace InvoiceSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 66);
+            this.label1.Location = new System.Drawing.Point(86, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(127, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Invoice Number :-";
+            this.label1.Text = "Invoice Number :";
             // 
             // txtInvoice
             // 
-            this.txtInvoice.Location = new System.Drawing.Point(154, 63);
+            this.txtInvoice.Location = new System.Drawing.Point(231, 97);
+            this.txtInvoice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInvoice.Name = "txtInvoice";
-            this.txtInvoice.Size = new System.Drawing.Size(118, 20);
+            this.txtInvoice.Size = new System.Drawing.Size(175, 26);
             this.txtInvoice.TabIndex = 1;
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(515, 66);
+            this.BtnDelete.Location = new System.Drawing.Point(772, 102);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(76, 31);
+            this.BtnDelete.Size = new System.Drawing.Size(114, 48);
             this.BtnDelete.TabIndex = 4;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@ namespace InvoiceSystem
             // 
             // BtnShowData
             // 
-            this.BtnShowData.Location = new System.Drawing.Point(377, 63);
+            this.BtnShowData.Location = new System.Drawing.Point(566, 97);
+            this.BtnShowData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnShowData.Name = "BtnShowData";
-            this.BtnShowData.Size = new System.Drawing.Size(82, 31);
+            this.BtnShowData.Size = new System.Drawing.Size(123, 48);
             this.BtnShowData.TabIndex = 5;
             this.BtnShowData.Text = "Show Data";
             this.BtnShowData.UseVisualStyleBackColor = true;
@@ -80,26 +84,31 @@ namespace InvoiceSystem
             // dataGridViewCustmerInformation
             // 
             this.dataGridViewCustmerInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustmerInformation.Location = new System.Drawing.Point(60, 120);
+            this.dataGridViewCustmerInformation.Location = new System.Drawing.Point(90, 185);
+            this.dataGridViewCustmerInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewCustmerInformation.Name = "dataGridViewCustmerInformation";
-            this.dataGridViewCustmerInformation.Size = new System.Drawing.Size(604, 140);
+            this.dataGridViewCustmerInformation.RowHeadersWidth = 62;
+            this.dataGridViewCustmerInformation.Size = new System.Drawing.Size(906, 215);
             this.dataGridViewCustmerInformation.TabIndex = 6;
             // 
             // dataGridViewCartInformation
             // 
             this.dataGridViewCartInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCartInformation.Location = new System.Drawing.Point(60, 288);
+            this.dataGridViewCartInformation.Location = new System.Drawing.Point(90, 443);
+            this.dataGridViewCartInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewCartInformation.Name = "dataGridViewCartInformation";
-            this.dataGridViewCartInformation.Size = new System.Drawing.Size(604, 150);
+            this.dataGridViewCartInformation.RowHeadersWidth = 62;
+            this.dataGridViewCartInformation.Size = new System.Drawing.Size(906, 231);
             this.dataGridViewCartInformation.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 104);
+            this.label3.Location = new System.Drawing.Point(86, 160);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.Size = new System.Drawing.Size(159, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "CustmerDetails";
             // 
@@ -107,17 +116,18 @@ namespace InvoiceSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(57, 272);
+            this.label4.Location = new System.Drawing.Point(86, 418);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 16);
+            this.label4.Size = new System.Drawing.Size(166, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Cart Information";
             // 
             // DeleteCart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridViewCartInformation);
@@ -126,6 +136,7 @@ namespace InvoiceSystem
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.txtInvoice);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DeleteCart";
             this.Text = "DeleteCart";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustmerInformation)).EndInit();

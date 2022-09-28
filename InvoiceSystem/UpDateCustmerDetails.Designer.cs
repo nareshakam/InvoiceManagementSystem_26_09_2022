@@ -48,69 +48,77 @@ namespace InvoiceSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(18, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(123, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "InvoiceNumber :-";
+            this.label1.Text = "InvoiceNumber :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 39);
+            this.label2.Location = new System.Drawing.Point(18, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(123, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Custmer Name :-";
+            this.label2.Text = "Custmer Name :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 72);
+            this.label3.Location = new System.Drawing.Point(18, 111);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.Size = new System.Drawing.Size(102, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "InvoiceDate :-";
+            this.label3.Text = "InvoiceDate :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 105);
+            this.label4.Location = new System.Drawing.Point(18, 162);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
+            this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Custmer Address :-";
+            this.label4.Text = "Custmer Address :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 137);
+            this.label5.Location = new System.Drawing.Point(18, 211);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 13);
+            this.label5.Size = new System.Drawing.Size(118, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Invoice Status :-\r\n";
+            this.label5.Text = "Invoice Status :";
             // 
             // txtCustmerName
             // 
-            this.txtCustmerName.Location = new System.Drawing.Point(152, 36);
+            this.txtCustmerName.Location = new System.Drawing.Point(228, 55);
+            this.txtCustmerName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCustmerName.Name = "txtCustmerName";
-            this.txtCustmerName.Size = new System.Drawing.Size(100, 20);
+            this.txtCustmerName.Size = new System.Drawing.Size(148, 26);
             this.txtCustmerName.TabIndex = 5;
             // 
             // txtDateData
             // 
             this.txtDateData.CustomFormat = "yyyy-MM-dd";
             this.txtDateData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtDateData.Location = new System.Drawing.Point(152, 72);
+            this.txtDateData.Location = new System.Drawing.Point(228, 111);
+            this.txtDateData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDateData.Name = "txtDateData";
-            this.txtDateData.Size = new System.Drawing.Size(100, 20);
+            this.txtDateData.Size = new System.Drawing.Size(148, 26);
             this.txtDateData.TabIndex = 6;
             // 
             // txtaddress
             // 
-            this.txtaddress.Location = new System.Drawing.Point(152, 105);
+            this.txtaddress.Location = new System.Drawing.Point(228, 162);
+            this.txtaddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtaddress.Name = "txtaddress";
-            this.txtaddress.Size = new System.Drawing.Size(100, 20);
+            this.txtaddress.Size = new System.Drawing.Size(148, 26);
             this.txtaddress.TabIndex = 5;
             // 
             // cmbstatus
@@ -119,34 +127,39 @@ namespace InvoiceSystem
             this.cmbstatus.Items.AddRange(new object[] {
             "Paid",
             "UnPaid"});
-            this.cmbstatus.Location = new System.Drawing.Point(152, 137);
+            this.cmbstatus.Location = new System.Drawing.Point(228, 211);
+            this.cmbstatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbstatus.Name = "cmbstatus";
-            this.cmbstatus.Size = new System.Drawing.Size(100, 21);
+            this.cmbstatus.Size = new System.Drawing.Size(148, 28);
             this.cmbstatus.TabIndex = 7;
             // 
             // dataGridViewMainEdit
             // 
             this.dataGridViewMainEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMainEdit.Location = new System.Drawing.Point(15, 188);
+            this.dataGridViewMainEdit.Location = new System.Drawing.Point(22, 289);
+            this.dataGridViewMainEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewMainEdit.Name = "dataGridViewMainEdit";
+            this.dataGridViewMainEdit.RowHeadersWidth = 62;
             this.dataGridViewMainEdit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewMainEdit.Size = new System.Drawing.Size(541, 150);
+            this.dataGridViewMainEdit.Size = new System.Drawing.Size(812, 231);
             this.dataGridViewMainEdit.TabIndex = 8;
             this.dataGridViewMainEdit.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMainEdit_CellClick);
             // 
             // lbInvoiceNumber
             // 
             this.lbInvoiceNumber.AutoSize = true;
-            this.lbInvoiceNumber.Location = new System.Drawing.Point(149, 9);
+            this.lbInvoiceNumber.Location = new System.Drawing.Point(224, 14);
+            this.lbInvoiceNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbInvoiceNumber.Name = "lbInvoiceNumber";
-            this.lbInvoiceNumber.Size = new System.Drawing.Size(0, 13);
+            this.lbInvoiceNumber.Size = new System.Drawing.Size(0, 20);
             this.lbInvoiceNumber.TabIndex = 0;
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.Location = new System.Drawing.Point(323, 134);
+            this.BtnUpdate.Location = new System.Drawing.Point(484, 206);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.BtnUpdate.Size = new System.Drawing.Size(112, 35);
             this.BtnUpdate.TabIndex = 9;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
@@ -154,9 +167,10 @@ namespace InvoiceSystem
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(418, 133);
+            this.BtnDelete.Location = new System.Drawing.Point(627, 205);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(75, 23);
+            this.BtnDelete.Size = new System.Drawing.Size(112, 35);
             this.BtnDelete.TabIndex = 10;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -164,9 +178,9 @@ namespace InvoiceSystem
             // 
             // UpDateCustmerDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.dataGridViewMainEdit);
@@ -180,6 +194,7 @@ namespace InvoiceSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbInvoiceNumber);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UpDateCustmerDetails";
             this.Text = "UpDateCustmerDetails";
             this.Load += new System.EventHandler(this.UpDateCustmerDetails_Load);
